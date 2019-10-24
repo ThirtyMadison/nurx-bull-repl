@@ -14,9 +14,9 @@ export async function setQueue(
   name: string,
   url: string,
   options: QueueOptions
-): void;
-export async function setQueue(queue: Queue): void;
-export async function setQueue(...args: any[]): void {
+): Promise<void>;
+export async function setQueue(queue: TQueue): Promise<void>;
+export async function setQueue(...args: any[]): Promise<void> {
   if (args[0] instanceof Queue) {
     queue = args[0];
   } else {
