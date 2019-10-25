@@ -1,7 +1,7 @@
 import Queue, { Queue as TQueue, QueueOptions } from "bull";
 import { throwYellow } from "./utils";
 
-let queue: TQueue | void;
+export let queue: TQueue | void;
 
 export async function getQueue() {
   if (!queue) {
