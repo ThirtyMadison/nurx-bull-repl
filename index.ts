@@ -37,6 +37,8 @@ import {
 } from "./src/utils";
 import { getQueue, setQueue } from "./src/queue";
 
+export { getQueue, setQueue };
+
 export const vorpal = new Vorpal();
 
 vorpal

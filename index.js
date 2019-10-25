@@ -9,6 +9,8 @@ const vorpal_1 = __importDefault(require("vorpal"));
 const ms_1 = __importDefault(require("ms"));
 const utils_1 = require("./src/utils");
 const queue_1 = require("./src/queue");
+exports.getQueue = queue_1.getQueue;
+exports.setQueue = queue_1.setQueue;
 exports.vorpal = new vorpal_1.default();
 exports.vorpal
     .command("connect <queue>", "connect to bull queue")
