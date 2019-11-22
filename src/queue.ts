@@ -17,7 +17,7 @@ export async function setQueue(
 ): Promise<void>;
 export async function setQueue(queue: TQueue): Promise<void>;
 export async function setQueue(...args: any[]): Promise<void> {
-  if (args[0] instanceof Queue) {
+  if (args[0] instanceof Queue || args[0].constructor.name === 'Queue') {
     queue = args[0];
   } else {
     const [name, url, options] = args;

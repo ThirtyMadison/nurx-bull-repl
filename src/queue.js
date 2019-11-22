@@ -13,7 +13,7 @@ async function getQueue() {
 }
 exports.getQueue = getQueue;
 async function setQueue(...args) {
-    if (args[0] instanceof bull_1.default) {
+    if (args[0] instanceof bull_1.default || args[0].constructor.name === 'Queue') {
         exports.queue = args[0];
     }
     else {
