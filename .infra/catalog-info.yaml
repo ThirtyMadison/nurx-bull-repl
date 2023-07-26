@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  annotations:
+    github.com/project-slug: ThirtyMadison/nurx-bull-repl
+  description: Nurx Bull Repl
+  labels:
+    has_frontend: 'False'
+  links:
+  - icon: github
+    title: Github
+    url: https://github.com/ThirtyMadison/nurx-bull-repl
+  name: nurx-bull-repl
+  tags:
+  - typescript
+spec:
+  dependsOn: []
+  lifecycle: production
+  type: service
